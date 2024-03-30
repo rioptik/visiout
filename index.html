@@ -106,15 +106,15 @@
             let outcome = '';
 
             if (pci === 1 && age > 18) {
-                outcome = 'Red (Poor)';
+                outcome = 'Poor';
             } else if (pci === 0) {
                 if (age < 18 && socioeconomicStatus === 'Good') {
-                    outcome = 'Green (Fair)';
+                    outcome = 'Fair';
                 } else {
-                    outcome = 'Yellow (Moderate)';
+                    outcome = 'Moderate';
                 }
             } else {
-                outcome = 'Yellow (Moderate)';
+                outcome = 'Moderate';
             }
 
             document.getElementById('visualOutcome').textContent = outcome;
