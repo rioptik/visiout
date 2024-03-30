@@ -123,9 +123,9 @@
             const cc0ProbabilityBar = document.getElementById('cc0ProbabilityBar');
             cc0ProbabilityBar.className = ''; // Clear previous classes
 
-            if (outcome.includes('Green')) {
+            if (outcome === 'Fair') {
                 cc0ProbabilityBar.classList.add('green-bar');
-            } else if (outcome.includes('Yellow')) {
+            } else if (outcome === 'Moderate') {
                 cc0ProbabilityBar.classList.add('yellow-bar');
             } else {
                 cc0ProbabilityBar.classList.add('red-bar');
